@@ -31,7 +31,7 @@
 
 ### Links
 
-- [Live 🔗](https://app.netlify.com/sites/dynamic-hotteok-7db38b/overview)
+- [Live 🔗](https://dynamic-hotteok-7db38b.netlify.app/)
 
 ## My process
 
