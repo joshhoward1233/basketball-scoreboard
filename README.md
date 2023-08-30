@@ -31,7 +31,7 @@
 
 ### Links
 
-- [Live 🔗](https://dynamic-hotteok-7db38b.netlify.app/)
+- [Live 🔗](https://basketball-scoreboard-joshhoward.netlify.app/)
 
 ## My process
 
