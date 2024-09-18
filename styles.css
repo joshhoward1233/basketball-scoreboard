@@ -1,9 +1,5 @@
-@font-face {
-  src: url("fonts/CursedTimer.ttf");
-  font-family: CursedTimer;
-}
-
 body {
+  font-family: 'Cursed Timer ULiL', sans-serif;
   margin: 0;
   background-color: #1B244A;
 }
@@ -46,7 +42,7 @@ body {
   margin: 0 auto;
   top: 5px;
   left: 13px;
-  font-family: "CursedTimer", sans-serif;
+  font-family: "Cursed Timer ULiL", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 90px;
@@ -121,7 +117,7 @@ body {
   margin: 0 auto;
   top: 5px;
   left: 13px;
-  font-family: "CursedTimer", sans-serif;
+  font-family: "Cursed Timer ULiL", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 90px;
@@ -170,7 +166,7 @@ body {
   height: 25.77px;
   left: 89px;
   top: 280px;
-  font-family: "CursedTimer", sans-serif;
+  font-family: "Cursed Timer ULiL", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
