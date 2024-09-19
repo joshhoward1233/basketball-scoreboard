@@ -1,176 +1,127 @@
-body {
-  font-family: 'Cursed Timer ULiL', sans-serif;
-  margin: 0;
-  background-color: #1B244A;
+/* === CSS Variables === */
+
+:root {
+  --background: rgba(27, 36, 74, 1);
+  --primary: rgba(154, 171, 216, 1);
+  --heading: rgba(238, 238, 238, 1);
+  --text: rgba(249, 79, 109, 1);
+  --scoreboard: rgba(8, 0, 1, 1);
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-family: "Cursed Timer ULiL", sans-serif;
+  background-color: var(--background);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Heading === */
+
+.heading {
+  font-family: "Verdana", sans-serif;
+  color: var(--heading);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* === Container === */
 
 .container {
   display: flex;
-  justify-content: space-around;
-}
-
-.home-title {
-  position: absolute;
-  width: 149px;
-  height: 36px;
-  left: 85px;
-  top: 68px;
-  margin: 0 auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 36px;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  color: var(--heading);
   text-align: center;
-  color: #EEEEEE;
 }
 
-.home-score-background {
-  position: absolute;
-  width: 155px;
-  height: 120px;
-  left: 82px;
-  top: 125px;
-  background: #080001;
-  border-radius: 5px;
+/* === Home & Guest Section ==== */
+
+.home-score,
+.guest-score {
+  width: 18em;
+  padding: 1em;
+  /*border: 1px solid white;*/
 }
 
-#score-home-el {
-  position: absolute;
-  width: 117px;
-  height: 120px;
-  margin: 0 auto;
-  top: 5px;
-  left: 13px;
-  font-family: "Cursed Timer ULiL", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 90px;
-  line-height: 127px;
-  text-align: center;
-  color: #F94F6D;
+h3 {
+  font-family: "Verdana", sans-serif;
+  font-size: 2.5rem;
 }
 
-#freethrow-home-el {
-  box-sizing:border-box;
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  left: 82px;
-  top: 271px;
-  border: 2px solid #9AABD8;
-  border-radius: 5px;
-}
+/* === Home & Guest Counters === */
 
-#midrange-home-el {
-  box-sizing: border-box;
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  left: 136px;
-  top: 271px;
-  border: 2px solid #9AABD8;
-  border-radius: 5px;
-}
-
-#longthree-home-el {
-  box-sizing: border-box;
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  left: 192px;
-  top: 271px;
-  border: 2px solid #9AABD8;
-  border-radius: 5px;
-}
-
-.guest-title {
-  position: absolute;
-  width: 149px;
-  height: 36px;
-  left: 340px;
-  top: 68px;
-  margin: 0 auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 36px;
-  text-align: center;
-  color: #EEEEEE;
-}
-
+.home-score-background,
 .guest-score-background {
-  position: absolute;
-  width: 155px;
-  height: 120px;
-  left: 337px;
-  top: 125px;
-  background: #080001;
+  width: 8.75em;
+  background-color: var(--scoreboard);
+  margin: 1.25em auto;
   border-radius: 5px;
 }
 
-#score-guest-el {
-  position: absolute;
-  width: 117px;
-  height: 120px;
-  margin: 0 auto;
-  top: 5px;
-  left: 13px;
+h2 {
   font-family: "Cursed Timer ULiL", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 90px;
-  line-height: 127px;
+  font-size: 5.625rem;
   text-align: center;
-  color: #F94F6D;
+  color: var(--text);
+  padding-top: 0.18em;
 }
 
-#freethrow-guest-el {
-  box-sizing:border-box;
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  left: 337px;
-  top: 271px;
-  border: 2px solid #9AABD8;
+/* === Buttons === */
+
+.buttons {
+  display: flex;
+  gap: 0.4em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.plusone-btn,
+.plustwo-btn,
+.plusthree-btn,
+.reset-btn {
+  border: 0;
+  padding: 0.5625em;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
   border-radius: 5px;
-}
-
-#midrange-guest-el {
-  box-sizing:border-box;
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  left: 391px;
-  top: 271px;
-  border: 2px solid #9AABD8;
-  border-radius: 5px;
-}
-
-#longthree-guest-el {
-  box-sizing:border-box;
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  left: 447px;
-  top: 271px;
-  border: 2px solid #9AABD8;
-  border-radius: 5px;
-}
-
-.btn {
-  position:absolute;
-  background-color: #1B244A;
-  width: 30px;
-  height: 25.77px;
-  left: 89px;
-  top: 280px;
+  font-size: 0.9rem;
   font-family: "Cursed Timer ULiL", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  color: #9AABD8;
+}
+
+.reset-btn{
+  letter-spacing: 0.125em;
+}
+
+.buttons > button:active {
+  transform: scale(0.96);
+}
+
+/* === Media Queries === */
+
+@media (max-width: 667px) {
+
+  .container {
+    margin: 5em;
+  }
+
 }

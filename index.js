@@ -1,6 +1,9 @@
 let scoreHomeEl = document.getElementById("score-home-el")
 let scoreGuestEl = document.getElementById("score-guest-el")
 
+let resetHomeScore = document.getElementById("reset-home-score");
+let resetGuestScore = document.getElementById("reset-guest-score");
+
 let countHome = 0
 let countGuest = 0
 
@@ -21,6 +24,11 @@ function longthreeHome() {
     scoreHomeEl.textContent = countHome
 }
 
+resetHomeScore.addEventListener("click", function () {
+	countHome = 0
+  scoreHomeEl.textContent = 0;
+});
+
 // Guest Score Count
 
 function freethrowGuest() {
@@ -37,3 +45,8 @@ function longthreeGuest() {
     countGuest += 3 // countGuest = countGuest + 3
     scoreGuestEl.textContent = countGuest
 }
+
+resetGuestScore.addEventListener("click", function () {
+	countGuest = 0
+  scoreGuestEl.textContent = 0;
+});
